@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a3b0Jm5XEBaV6/IbVJnWWlOzEjx4fM5EFtKLpwiKZ1n1Vw/Z9lu00MxWlfgVA2WUEj8HC/+Ed9kLII4oFDEseQ==",
+  "dgSpecHash": "mXrOrY4Vfu8pnSBrYs+kQ0r8net0gcbcZllTvm15PEIzDQQ5rgptiQiUGelzG+8vFMhnuPdOLbr0F8LBOffziQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\GhostMan\\BL\\BL.csproj",
+  "projectFilePath": "E:\\GhostMan\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

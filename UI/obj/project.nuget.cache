@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+twgdAtKmlf1DnsYc8chrVtkbPN36xRAn4oanneLxi3PDb8mnNOh6McIRMNAvEqUSp6cA3pmKuKx9FQrzsA7Yg==",
+  "dgSpecHash": "hTmAvn7lScqovrKNWo/n8JmxdOqhNW+WoXYbTFIyYootw4wrComxUxa9888HaNa3d8N3HUFVnQy+f/a+NtB3Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj",
+  "projectFilePath": "E:\\GhostMan\\UI\\UI.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
