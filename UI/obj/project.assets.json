@@ -8166,11 +8166,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj",
+      "projectUniqueName": "E:\\GhostMan\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj",
+      "projectPath": "E:\\GhostMan\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\obj\\",
+      "outputPath": "E:\\GhostMan\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
