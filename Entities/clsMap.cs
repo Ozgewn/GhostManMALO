@@ -10,7 +10,7 @@ namespace Entities
         int id;
         String nick;
         int size;
-        bool communityMap;
+        int communityMap;
         #endregion
         #region Builders
 
@@ -19,19 +19,19 @@ namespace Entities
 
         }
 
-        public clsMap(int id,String creator,int size,bool comunityMap)
+        public clsMap(int id,String nick,int size,int communityMap)
         {
             this.id = id;
-            this.nick = creator;
+            this.nick = nick;
             this.size = size;
-            this.communityMap = comunityMap;
+            this.communityMap = communityMap;
         }
         #endregion
         #region Getters & Setters
-        public bool ComunityMap { get => communityMap; set => communityMap = value; }
         public int Id { get => id; set => id = value; }
-        public string Creator { get => nick; set => nick = value; }
+        public string Nick { get => nick; set => nick = value; }
         public int Size { get => size; set => size = value; }
+        public int CommunityMap { get => communityMap; set => communityMap = value; }
         #endregion
     }
 }

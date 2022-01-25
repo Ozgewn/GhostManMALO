@@ -6,17 +6,17 @@ using Entities;
 
 namespace DAL.manager
 {
-    public class clsLeaderboardManagerDAL
+    public class clsMapManagerDAL
     {
         /// <summary>
-        ///     <header> public static int postLeaderboardDAL(clsLeaderboard oLeaderboard)</header>
-        ///     <description> This method insert a new leaderboard in the database </description>
+        ///     <header> public static int postMapDAL(clsMap oMap)</header>
+        ///     <description> This method insert a new map in the database </description>
         ///     <precondition> None </precondition>
         ///     <postcondition> Returns the count of rows affected </postcondition>
         /// </summary>
-        /// <param name="oLeaderboard">clsLeaderboard</param>
+        /// <param name="oMap">clsMap</param>
         /// <returns>int result</returns>
-        public static int postLeaderboardDAL(clsLeaderboard oLeaderboard)
+        public static int postMapDAL(clsMap oMap)
         {
             int result = 0;
             conecction.clsConnection myConnection = new conecction.clsConnection();
@@ -26,10 +26,11 @@ namespace DAL.manager
             try
             {
                 connection = myConnection.getConnection();
-                myCommand.Parameters.Add("@idMap", System.Data.SqlDbType.Int).Value = oLeaderboard.IdMap;
-                myCommand.Parameters.Add("@nick", System.Data.SqlDbType.VarChar).Value = oLeaderboard.Nick;
-                myCommand.Parameters.Add("@score", System.Data.SqlDbType.Int).Value = oLeaderboard.Score;
-                myCommand.CommandText = "INSERT INTO Leaderboard VALUES (@idMap,@nick,@score)";
+                myCommand.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = oMap.Id;
+                myCommand.Parameters.Add("@nick", System.Data.SqlDbType.VarChar).Value = oMap.Nick;
+                myCommand.Parameters.Add("@size", System.Data.SqlDbType.Int).Value = oMap.Size;
+                myCommand.Parameters.Add("@communityMap", System.Data.SqlDbType.Int).Value = oMap.CommunityMap;
+                myCommand.CommandText = "INSERT INTO Leaderboard VALUES (@id,@nick,@size,@communityMap)";
                 myCommand.Connection = connection;
                 result = myCommand.ExecuteNonQuery();
             }

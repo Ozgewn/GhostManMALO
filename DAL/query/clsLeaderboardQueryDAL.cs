@@ -10,35 +10,35 @@ namespace DAL.query
     public class clsLeaderBoardQueryDAL
     {
         /// <summary>
-        ///     <header>public static List<clsLeaderboard> generarListadoDepartamentosDAL()</header>
+        ///     <header>public static List<clsLeaderboard> getListOfLeaderboardDAL()</header>
         ///     <description> This method calls the database and returns a list of clsLeaderboard</description>
         ///     <precondition> None </precondition>
         ///     <postcondition> returns List<clsLeaderboard> leaderboards to the BL </postcondition>
         /// </summary>
         /// <returns>returns List<clsLeaderboard> leaderboards</returns>
-        public static List<clsLeaderboard> generarListadoDepartamentosDAL()
+        public static List<clsLeaderboard> getListOfLeaderboardDAL()
         {
-            conecction.clsConnection conexion = new conecction.clsConnection();
+            conecction.clsConnection myConnection = new conecction.clsConnection();
             List<clsLeaderboard> leaderboards = new List<clsLeaderboard>();
-            SqlConnection conection = null;
-            SqlCommand miComando = new SqlCommand();
-            SqlDataReader miLector = null;
+            SqlConnection connection = null;
+            SqlCommand myCommand = new SqlCommand();
+            SqlDataReader myReader = null;
             clsLeaderboard oLeaderboard;
 
             try
             {
-                conection = conexion.getConnection();
-                miComando.CommandText = "SELECT * FROM Leaderboard";
-                miComando.Connection = conection;
-                miLector = miComando.ExecuteReader();
-                if (miLector.HasRows)
+                connection = myConnection.getConnection();
+                myCommand.CommandText = "SELECT * FROM Leaderboard";
+                myCommand.Connection = connection;
+                myReader = myCommand.ExecuteReader();
+                if (myReader.HasRows)
                 {
-                    while (miLector.Read())
+                    while (myReader.Read())
                     {
                         oLeaderboard = new clsLeaderboard();
-                        oLeaderboard.IdMap = (int)miLector["idMap"];
-                        oLeaderboard.Nick = (String)miLector["nick"];
-                        oLeaderboard.Score = (int)miLector["score"];
+                        oLeaderboard.IdMap = (int)myReader["idMap"];
+                        oLeaderboard.Nick = (String)myReader["nick"];
+                        oLeaderboard.Score = (int)myReader["score"];
                         leaderboards.Add(oLeaderboard);
                     }
                 }
@@ -49,8 +49,8 @@ namespace DAL.query
             }
             finally
             {
-                miLector.Close();
-                conexion.closeConnection(ref conection);
+                myReader.Close();
+                myConnection.closeConnection(ref connection);
             }
             return leaderboards;
         }
