@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj": {}
+    "D:\\GitHub\\GhostMan\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj": {
+    "D:\\GitHub\\GhostMan\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj",
+        "projectUniqueName": "D:\\GitHub\\GhostMan\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\GhostMan\\UI\\obj\\",
+        "projectPath": "D:\\GitHub\\GhostMan\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\VSPC-EternalStormV2\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\GhostMan\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\VSPC-EternalStormV2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

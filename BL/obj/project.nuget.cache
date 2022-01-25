@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "a3b0Jm5XEBaV6/IbVJnWWlOzEjx4fM5EFtKLpwiKZ1n1Vw/Z9lu00MxWlfgVA2WUEj8HC/+Ed9kLII4oFDEseQ==",
+  "dgSpecHash": "XsIhAq+7FaqcLMLTVYfyg5bBYVLRn9U7etvzY2qIxLKjF+oKcqNHEnj3vcdoViXQ0oQQ1kmMKIRwSGxDBubX6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\GhostMan\\BL\\BL.csproj",
+  "projectFilePath": "D:\\GitHub\\GhostMan\\BL\\BL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\VSPC-EternalStormV2\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\VSPC-EternalStormV2\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
