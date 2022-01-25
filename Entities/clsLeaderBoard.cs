@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    public class clsLeaderBoard
+    public class clsLeaderboard
     {
         #region Attributes
         int idMap;
@@ -12,11 +12,11 @@ namespace Entities
         int score;
         #endregion
         #region Builders
-        public clsLeaderBoard()
+        public clsLeaderboard()
         {
 
         }
-        public clsLeaderBoard(int idMap,String nick,int score)
+        public clsLeaderboard(int idMap,String nick,int score)
         {
             this.idMap = idMap;
             this.nick = nick;

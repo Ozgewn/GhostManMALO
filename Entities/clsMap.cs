@@ -8,9 +8,9 @@ namespace Entities
     {
         #region Attributes
         int id;
-        String creator;
+        String nick;
         int size;
-        bool comunityMap;
+        bool communityMap;
         #endregion
         #region Builders
 
@@ -22,15 +22,15 @@ namespace Entities
         public clsMap(int id,String creator,int size,bool comunityMap)
         {
             this.id = id;
-            this.creator = creator;
+            this.nick = creator;
             this.size = size;
-            this.comunityMap = comunityMap;
+            this.communityMap = comunityMap;
         }
         #endregion
         #region Getters & Setters
-        public bool ComunityMap { get => comunityMap; set => comunityMap = value; }
+        public bool ComunityMap { get => communityMap; set => communityMap = value; }
         public int Id { get => id; set => id = value; }
-        public string Creator { get => creator; set => creator = value; }
+        public string Creator { get => nick; set => nick = value; }
         public int Size { get => size; set => size = value; }
         #endregion
     }
