@@ -56,7 +56,7 @@ namespace DAL.query
         }
         /// <summary>
         ///     <header>public static List<clsMap> getListOfCustomMapsDAL()</header>
-        ///     <description> This method calls the database and returns a list of clsMap what are custom</description>
+        ///     <description> This method calls the database and returns a list of custom maps</description>
         ///     <precondition> None </precondition>
         ///     <postcondition> returns List<clsMap> customMaps to the BL </postcondition>
         /// </summary>
@@ -102,7 +102,7 @@ namespace DAL.query
         }
         /// <summary>
         ///     <header>public static List<clsMap> getListOfDefaultMapsDAL()</header>
-        ///     <description> This method calls the database and returns a list of clsMap what are default</description>
+        ///     <description> This method calls the database and returns a list of default maps</description>
         ///     <precondition> None </precondition>
         ///     <postcondition> returns List<clsMap> defaultMaps to the BL </postcondition>
         /// </summary>

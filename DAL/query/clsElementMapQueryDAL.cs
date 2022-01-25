@@ -6,38 +6,40 @@ using Entities;
 
 namespace DAL.query
 {
-    public class clsElementTypeQueryDAL
+    public class clsElementMapQueryDAL
     {
         /// <summary>
-        ///     <header>public static List<clsElementType> getListOfElementTypeDAL()</header>
-        ///     <description> This method calls the database and returns a list of clsElementType</description>
+        ///     <header>public static List<clsElementMap> getListOfElementMapDAL()</header>
+        ///     <description> This method calls the database and returns a list of clsElementMap</description>
         ///     <precondition> None </precondition>
-        ///     <postcondition> returns List<clsElementType> elementTypes to the BL </postcondition>
+        ///     <postcondition> returns List<clsElementMap> elementsMap to the BL </postcondition>
         /// </summary>
-        /// <returns>returns List<clsElementType> elementTypes</returns>
-        public static List<clsElementType> getListOfElementTypeDAL()
+        /// <returns>returns List<clsElementMap> elementsMap</returns>
+        public static List<clsElementMap> getListOfElementMapDAL()
         {
             conecction.clsConnection myConnection = new conecction.clsConnection();
-            List<clsElementType> elementTypes = new List<clsElementType>();
+            List<clsElementMap> elementsMap = new List<clsElementMap>();
             SqlConnection connection = null;
             SqlCommand myCommand = new SqlCommand();
             SqlDataReader myReader = null;
-            clsElementType oElementType;
+            clsElementMap oElementMap;
 
             try
             {
                 connection = myConnection.getConnection();
-                myCommand.CommandText = "SELECT * FROM ElementType";
+                myCommand.CommandText = "SELECT * FROM ElementMap";
                 myCommand.Connection = connection;
                 myReader = myCommand.ExecuteReader();
                 if (myReader.HasRows)
                 {
                     while (myReader.Read())
                     {
-                        oElementType = new clsElementType();
-                        oElementType.Id = (int)myReader["id"];
-                        oElementType.Name = (String)myReader["name"];
-                        elementTypes.Add(oElementType);
+                        oElementMap = new clsElementMap();
+                        oElementMap.IdMap = (int)myReader["idMap"];
+                        oElementMap.IdElement = (int)myReader["idElement"];
+                        oElementMap.AxisX = (int)myReader["axisX"];
+                        oElementMap.AxisY = (int)myReader["axisY"];
+                        elementsMap.Add(oElementMap);
                     }
                 }
             }
@@ -50,7 +52,7 @@ namespace DAL.query
                 myReader.Close();
                 myConnection.closeConnection(ref connection);
             }
-            return elementTypes;
+            return elementsMap;
         }
     }
 }

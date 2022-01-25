@@ -6,17 +6,17 @@ using Entities;
 
 namespace DAL.manager
 {
-    public class clsMapManagerDAL
+    public class clsElementMapManagerDAL
     {
         /// <summary>
-        ///     <header> public static int postMapDAL(clsMap oMap)</header>
-        ///     <description> This method insert a new map in the database </description>
+        ///     <header> public static int postElementMapDAL(clsElementMap oElementMap)</header>
+        ///     <description> This method insert a new elementMap in the database </description>
         ///     <precondition> None </precondition>
         ///     <postcondition> Returns the count of rows affected </postcondition>
         /// </summary>
-        /// <param name="oMap">clsMap</param>
+        /// <param name="oElementMap">clsMap</param>
         /// <returns>int result</returns>
-        public static int postMapDAL(clsMap oMap)
+        public static int postElementMapDAL(clsElementMap oElementMap)
         {
             int result = 0;
             conecction.clsConnection myConnection = new conecction.clsConnection();
@@ -26,11 +26,11 @@ namespace DAL.manager
             try
             {
                 connection = myConnection.getConnection();
-                myCommand.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = oMap.Id;
-                myCommand.Parameters.Add("@nick", System.Data.SqlDbType.VarChar).Value = oMap.Nick;
-                myCommand.Parameters.Add("@size", System.Data.SqlDbType.Int).Value = oMap.Size;
-                myCommand.Parameters.Add("@communityMap", System.Data.SqlDbType.Int).Value = oMap.CommunityMap;
-                myCommand.CommandText = "INSERT INTO Map VALUES (@id,@nick,@size,@communityMap)";
+                myCommand.Parameters.Add("@idMap", System.Data.SqlDbType.Int).Value = oElementMap.IdMap;
+                myCommand.Parameters.Add("@idElement", System.Data.SqlDbType.Int).Value = oElementMap.IdElement;
+                myCommand.Parameters.Add("@axisX", System.Data.SqlDbType.Int).Value = oElementMap.AxisX;
+                myCommand.Parameters.Add("@asixY", System.Data.SqlDbType.Int).Value = oElementMap.AxisY;
+                myCommand.CommandText = "INSERT INTO ElementMap VALUES (@idMap,@idElement,@axisX,@axisY)";
                 myCommand.Connection = connection;
                 result = myCommand.ExecuteNonQuery();
             }
